@@ -25,7 +25,7 @@ function [bcpR, bcpP, pR, pP, pRM, pPM] = pdc(x,y,z,corrType,incMat)
 % pPM: partial correlation p-value from matlab's internal partialcorr
 %
 % [bcpR, bcpP, pRM, pCM,] = pdc(x,y,z,corrType)
-% Example call: [bcpR, bcpP, pRM, pCM,] = pdc(x,y,z,'both',true)
+% Example call for partial distance correlation: [bcpR, bcpP, pRM, pCM,] = pdc(x,y,z,'distance',false)
 %
 % alex.teghipco@sc.edu 
 
