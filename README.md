@@ -1,4 +1,0 @@
-# partialDistanceCorrelation
-Perform a partial correlation but using the distance correlation measure to account for any statistical dependency between variables of interest (supports generating p-values for distance correlations). See partialdistcorr.m.
-
-WARNING: distance correlation is computationally intensive and you may want to look into other measures of nonlinear relationships in large datasets. This is because to compute distance correlation we need to form a distance matrix between samples for each of the two variables that we are relating. On top of this, the only good way of getting a p-value is to repeat the procedure thousands of times on permuted data (there has been some work showing a chi-square distribution can approximate the null distribution for distance correlation so stay tuned for updates to these scripts: https://www.arxiv-vanity.com/papers/1912.12150/)
