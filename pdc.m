@@ -42,7 +42,7 @@ bcpR = [];bcpP = [];pR = [];pP = [];pRM = [];pPM = [];
 if isempty(which('bcdistcorr'))
    tmp = which('pdc.m');
    addpath(genpath(tmp)) ;
-   error('You do not have bcdistcorr.m in your path...attempting to add it by assuming it is in the same directory as this function...')
+   disp('You do not have bcdistcorr.m in your path...attempting to add it by assuming it is in the same directory as this function...')
 end
 
 d = [x y z];
