@@ -6,6 +6,8 @@ You can now use pdcPerm.m to perform a permutation based test of the significanc
 
 You can also use pdcPerm even if you don't want to do a permutation analysis. I recommend this as pdcPerm will clean up NaNs for you and check variables.
 
+Note, pdcPerm uses a different method for computing partial correlation, but will produce the same output as dcor in python (see: https://dcor.readthedocs.io/en/latest/index.html)
+
 For more information, see: 
 Székely, G. J., & Rizzo, M. L. (2014). Partial distance correlation with methods for dissimilarities. The Annals of Statistics, 42(6), 2382-2412.
 Also see these slides: https://stat.wisc.edu/wp-content/uploads/sites/870/2020/03/SzekelyGabor.pdf
