@@ -67,7 +67,7 @@ if size(z,2) > 1
 else
     id3 = find(isnan(z));
 end
-rid = unique([id1 id2 id3]);
+rid = unique([id1; id2; id3]);
 x(rid) = [];
 y(rid) = [];
 if size(z,2) > 1
@@ -76,7 +76,7 @@ else
     z(rid) = [];
 end
 if ~isempty(rid)
-    warning(['removed ' num2str(rid) ' samples...check output variable rid'])
+    warning(['removed ' num2str(length(rid)) ' samples...check output variable rid'])
 end
 
 [bcpR, bcpP] = pdc(x,y,z,'distance',true);
